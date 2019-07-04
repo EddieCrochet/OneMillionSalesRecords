@@ -11,21 +11,11 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{A89C80F3-E11E-44DD-9007-9F3D700F5296}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{559048E4-F6D1-4B04-BA16-E46F4ACB7AFA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.master]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{3545D31C-3FC5-4F18-988D-9BC58944C47E}"
-      DTS:ObjectName="LocalHost.master">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=master;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[SSIS Flat File Connection]"
       DTS:CreationName="FLATFILE"
