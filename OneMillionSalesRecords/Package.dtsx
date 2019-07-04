@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="9"
-  DTS:VersionGUID="{1C89B40A-5DBB-4CFB-83FC-3D6B22B0A9D0}">
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{A89C80F3-E11E-44DD-9007-9F3D700F5296}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -723,6 +723,13 @@
               </outputs>
             </component>
           </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task -- Extract, Modify, Load data.Paths[Flat File Source Output]"
+              endId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -750,7 +757,7 @@
     design-time-name="Package\Data Flow Task -- Extract, Modify, Load data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151.2,41.6"
           Id="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source"
@@ -758,7 +765,41 @@
         <NodeLayout
           Size="179.2,41.6"
           Id="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination"
-          TopLeft="226.166657898162,146.940001124064" />
+          TopLeft="85.4999968210857,144.16666776869" />
+        <EdgeLayout
+          Id="Package\Data Flow Task -- Extract, Modify, Load data.Paths[Flat File Source Output]"
+          TopLeft="154.266663540735,76.2666669421726">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.8333332803512,67.9000008265177"
+              Start="0,0"
+              End="20.8333332803512,60.4000008265177">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.9500004132589" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.9500004132589"
+                    Point2="0,33.9500004132589"
+                    Point3="4,33.9500004132589" />
+                  <mssgle:LineSegment
+                    End="16.8333332803512,33.9500004132589" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.8333332803512,33.9500004132589"
+                    Point2="20.8333332803512,33.9500004132589"
+                    Point3="20.8333332803512,37.9500004132589" />
+                  <mssgle:LineSegment
+                    End="20.8333332803512,60.4000008265177" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
