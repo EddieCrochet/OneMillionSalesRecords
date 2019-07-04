@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{2AD71BBA-F72F-4C2B-A228-F222BC8BF06D}">
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{5E42F874-DB7F-4DAE-8AF0-3A66A97AF30C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -82,6 +82,58 @@
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Connections[FlatFileConnection]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </output>
+                <output
+                  refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -187,89 +239,6 @@
                 </output>
               </outputs>
             </component>
-            <component
-              refId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="OLE DB Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset"></property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source.Connections[OleDbConnection]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <externalMetadataColumns
-                    isUsed="True" />
-                </output>
-                <output
-                  refId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
           </components>
           <paths>
             <path
@@ -278,10 +247,10 @@
               name="Data Conversion Output"
               startId="Package\Data Flow Task -- Extract, Modify, Load data\Data Conversion.Outputs[Data Conversion Output]" />
             <path
-              refId="Package\Data Flow Task -- Extract, Modify, Load data.Paths[OLE DB Source Output]"
+              refId="Package\Data Flow Task -- Extract, Modify, Load data.Paths[Flat File Source Output]"
               endId="Package\Data Flow Task -- Extract, Modify, Load data\Data Conversion.Inputs[Data Conversion Input]"
-              name="OLE DB Source Output"
-              startId="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source.Outputs[OLE DB Source Output]" />
+              name="Flat File Source Output"
+              startId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -312,10 +281,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152,41.6"
-          Id="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Source"
-          TopLeft="190.666659090254,66.5600005289714" />
-        <NodeLayout
           Size="171.2,41.6"
           Id="Package\Data Flow Task -- Extract, Modify, Load data\OLE DB Destination"
           TopLeft="219.33332461781,214.93333504147" />
@@ -323,40 +288,6 @@
           Size="156,41.6"
           Id="Package\Data Flow Task -- Extract, Modify, Load data\Data Conversion"
           TopLeft="262.666656229232,144.213334479438" />
-        <EdgeLayout
-          Id="Package\Data Flow Task -- Extract, Modify, Load data.Paths[OLE DB Source Output]"
-          TopLeft="266.666659090254,108.160000528971">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="73.9999971389772,36.0533339504666"
-              Start="0,0"
-              End="73.9999971389772,28.5533339504666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.0266669752333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.0266669752333"
-                    Point2="0,18.0266669752333"
-                    Point3="4,18.0266669752333" />
-                  <mssgle:LineSegment
-                    End="69.9999971389772,18.0266669752333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="69.9999971389772,18.0266669752333"
-                    Point2="73.9999971389772,18.0266669752333"
-                    Point3="73.9999971389772,22.0266669752333" />
-                  <mssgle:LineSegment
-                    End="73.9999971389772,28.5533339504666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task -- Extract, Modify, Load data.Paths[Data Conversion Output]"
           TopLeft="340.666656229232,185.813334479438">
@@ -383,6 +314,44 @@
                     Point3="-35.7333316114215,18.560000281016" />
                   <mssgle:LineSegment
                     End="-35.7333316114215,21.6200005620321" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source"
+          TopLeft="273.999989112219,72.106667239719" />
+        <EdgeLayout
+          Id="Package\Data Flow Task -- Extract, Modify, Load data.Paths[Flat File Source Output]"
+          TopLeft="349.599989112219,113.706667239719">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.93333288298709,30.506667239719"
+              Start="0,0"
+              End="-8.93333288298709,23.006667239719">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.2533336198595" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.2533336198595"
+                    Point2="0,15.2533336198595"
+                    Point3="-4,15.2533336198595" />
+                  <mssgle:LineSegment
+                    End="-4.93333288298709,15.2533336198595" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.93333288298709,15.2533336198595"
+                    Point2="-8.93333288298709,15.2533336198595"
+                    Point3="-8.93333288298709,19.2533336198595" />
+                  <mssgle:LineSegment
+                    End="-8.93333288298709,23.006667239719" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
