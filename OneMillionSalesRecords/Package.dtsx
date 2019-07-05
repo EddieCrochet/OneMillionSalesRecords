@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{E055CCF5-B5CF-452B-84BD-5E7863765152}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{4035EAF9-7F84-4874-9224-3FB51DA8B9AC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -264,7 +264,9 @@
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Item Type]" />
                     <inputColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Sales Channel]"
-                      cachedDataType="bool"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
                       cachedName="Sales Channel"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sales Channel]"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]" />
@@ -366,7 +368,8 @@
                       name="Item Type" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sales Channel]"
-                      dataType="bool"
+                      dataType="wstr"
+                      length="10"
                       name="Sales Channel" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order Priority]"
@@ -540,10 +543,12 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]"
-                      dataType="bool"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sales Channel]"
+                      length="50"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]"
                       name="Sales Channel"
                       truncationRowDisposition="FailComponent">
