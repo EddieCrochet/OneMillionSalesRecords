@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{4035EAF9-7F84-4874-9224-3FB51DA8B9AC}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{8AB2B62E-25F1-48A7-B78B-3113672BB0D0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -266,7 +266,7 @@
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Sales Channel]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="10"
                       cachedName="Sales Channel"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sales Channel]"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]" />
@@ -548,7 +548,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sales Channel]"
-                      length="50"
+                      length="10"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]"
                       name="Sales Channel"
                       truncationRowDisposition="FailComponent">
