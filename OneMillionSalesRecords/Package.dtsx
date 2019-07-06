@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{4C665A64-67EA-4832-ADC6-A6C6C1957B51}">
+  DTS:VersionBuild="25"
+  DTS:VersionGUID="{F95E4D47-865E-4DC8-B925-1C27BFD83120}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -238,6 +238,118 @@
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Region]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Region"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Region]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Region]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Country]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Country]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Item Type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Item Type"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Item Type]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Item Type]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Sales Channel]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Sales Channel"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sales Channel]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Order Priority]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Order Priority"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order Priority]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order Priority]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Order Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Order Date"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order Date]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order Date]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Order ID]"
+                      cachedDataType="ui4"
+                      cachedName="Order ID"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order ID]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order ID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Units Sold]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Units Sold"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Units Sold]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Units Sold]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Unit Price]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Unit Price"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Unit Price]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Unit Price]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Unit Cost]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Unit Cost"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Unit Cost]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Unit Cost]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Total Revenue]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Total Revenue"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Total Revenue]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Total Revenue]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Total Cost]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Total Cost"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Total Cost]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Total Cost]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Total Profit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Total Profit"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Total Profit]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Total Profit]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Ship Date]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Ship Date"
+                      externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ShipDate]"
+                      lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Ship Date]" />
+                  </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
@@ -271,9 +383,7 @@
                       name="Order Date" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order ID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="i8"
                       name="Order ID" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ShipDate]"
