@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{DD2D19B0-E407-4A5A-85F3-461A86C7D9A6}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{D39723DD-2A3A-4CA7-816C-969F64BF8BBC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Region"
-              DTS:DTSID="{A6333C4D-AF9C-486C-9D73-8E8C3F2837B7}"
+              DTS:DTSID="{5B3998C5-82D1-4D98-A9D6-BA355315751D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{8F47C5E6-A7D1-4811-9C4F-69CA0CA01527}"
+              DTS:DTSID="{C49973D4-F225-4719-815E-90504CC16F9D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Item Type"
-              DTS:DTSID="{42C08BF1-8F60-4628-8810-B28290C0E6C4}"
+              DTS:DTSID="{977D19F1-5684-4C3D-A744-6C0CCB8BEB0A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Sales Channel"
-              DTS:DTSID="{A91EF1B3-8A54-460A-8248-8B29648046E8}"
+              DTS:DTSID="{8DD8B4C3-2903-4C40-97CF-86FA3AB9456E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,7 +86,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Order Priority"
-              DTS:DTSID="{F6939917-FC34-4896-ADA9-4C985A9A6D33}"
+              DTS:DTSID="{76212463-98A0-4E15-ACEB-3F2FC2C18FF4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -95,7 +95,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Order Date"
-              DTS:DTSID="{578F2A89-11D9-44BF-ADB5-B9F6CE08FB9A}"
+              DTS:DTSID="{A84E03A6-DB78-43F9-8A79-F04CF94EB548}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Order ID"
-              DTS:DTSID="{96F11377-1611-4021-ABA8-B789A6D8A910}"
+              DTS:DTSID="{D3013090-4F68-4248-BA69-1BFEEE98F427}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -113,7 +113,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Ship Date"
-              DTS:DTSID="{1FA38256-F893-446B-9A7F-F8CFE009F7B1}"
+              DTS:DTSID="{ACE61063-4C0B-4156-A0EE-18EBA77B13BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -122,7 +122,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Units Sold"
-              DTS:DTSID="{6ABA4278-1E69-42FC-94D0-F951CA14B1E8}"
+              DTS:DTSID="{1B147942-9F3C-4F5B-A3D6-09D8FCE05FD9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,7 +131,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Unit Price"
-              DTS:DTSID="{127CF46D-CCD8-48DB-8803-98736B53691E}"
+              DTS:DTSID="{E96D90AF-CD7C-4AD3-8798-73E192D44F73}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -140,7 +140,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Unit Cost"
-              DTS:DTSID="{C5569238-91D9-4650-952D-0071A1662642}"
+              DTS:DTSID="{AA6EDC62-E25D-4F36-A910-139C19A0FF37}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -149,7 +149,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Total Revenue"
-              DTS:DTSID="{C768049D-9D37-4A1A-8168-40E3ED85608E}"
+              DTS:DTSID="{385A5079-9931-40AC-B5DC-7D8A13279EEA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -158,7 +158,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Total Cost"
-              DTS:DTSID="{1B55C148-D9AD-4AEF-82B7-2AD9180D09DD}"
+              DTS:DTSID="{DE648A54-99EE-4BB1-8507-ED67D67F266C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +167,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Total Profit"
-              DTS:DTSID="{5F1067BA-AB73-4EFB-9AB5-B5B98CAF482A}"
+              DTS:DTSID="{842B228F-6E15-4702-B1D6-097677CA3EED}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -267,7 +267,7 @@
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Sales Channel]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="10"
                       cachedName="Sales Channel"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sales Channel]"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]" />
@@ -552,7 +552,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sales Channel]"
-                      length="50"
+                      length="10"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]"
                       name="Sales Channel"
                       truncationRowDisposition="FailComponent">
@@ -812,7 +812,7 @@
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sales Channel]"
                       codePage="1252"
                       dataType="str"
-                      length="50"
+                      length="10"
                       name="Sales Channel" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Order Priority]"
