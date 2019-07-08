@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{4375125A-7387-44F9-966E-5D4E1581CF9A}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{DD2D19B0-E407-4A5A-85F3-461A86C7D9A6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -377,7 +377,7 @@
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order Priority]"
                       dataType="wstr"
-                      length="1"
+                      length="50"
                       name="Order Priority" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order Date]"
