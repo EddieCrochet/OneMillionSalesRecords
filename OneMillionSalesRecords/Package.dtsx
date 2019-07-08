@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{CE7E3F11-AB5E-48A0-A378-AE920638CEE5}">
+  DTS:VersionBuild="34"
+  DTS:VersionGUID="{EC7D08AE-A777-4090-A164-AEEF8EC8614F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -50,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Region"
-              DTS:DTSID="{5B3998C5-82D1-4D98-A9D6-BA355315751D}"
+              DTS:DTSID="{C7973394-A67B-4FA9-8203-CB169E1E531B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -59,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Country"
-              DTS:DTSID="{C49973D4-F225-4719-815E-90504CC16F9D}"
+              DTS:DTSID="{8B64CA88-6068-4C3A-B351-FFE106C295D6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -68,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Item Type"
-              DTS:DTSID="{977D19F1-5684-4C3D-A744-6C0CCB8BEB0A}"
+              DTS:DTSID="{3EC16FCC-9517-4FFC-AD56-409812533C7E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -77,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Sales Channel"
-              DTS:DTSID="{8DD8B4C3-2903-4C40-97CF-86FA3AB9456E}"
+              DTS:DTSID="{B02A6F9A-E47C-4EB9-8841-462133AE8D78}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,34 +86,31 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Order Priority"
-              DTS:DTSID="{76212463-98A0-4E15-ACEB-3F2FC2C18FF4}"
+              DTS:DTSID="{E53BEBBC-9AD3-4671-9CD7-5DA80535A0AA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Order Date"
-              DTS:DTSID="{A84E03A6-DB78-43F9-8A79-F04CF94EB548}"
+              DTS:DTSID="{503E2B16-AAF5-4500-946D-9976E8B03D79}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="21"
               DTS:TextQualified="True"
               DTS:ObjectName="Order ID"
-              DTS:DTSID="{D3013090-4F68-4248-BA69-1BFEEE98F427}"
+              DTS:DTSID="{85846E89-780C-481E-A854-6EB38863A4A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
+              DTS:DataType="135"
               DTS:TextQualified="True"
               DTS:ObjectName="Ship Date"
-              DTS:DTSID="{ACE61063-4C0B-4156-A0EE-18EBA77B13BF}"
+              DTS:DTSID="{B48F2631-1083-49B9-92CE-E81C28993526}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -122,7 +119,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Units Sold"
-              DTS:DTSID="{1B147942-9F3C-4F5B-A3D6-09D8FCE05FD9}"
+              DTS:DTSID="{CC63135B-E1E7-4F91-A8E9-70732A6D5262}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,7 +128,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Unit Price"
-              DTS:DTSID="{E96D90AF-CD7C-4AD3-8798-73E192D44F73}"
+              DTS:DTSID="{68F76775-C55D-45C7-8915-BF55D495D187}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -140,7 +137,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Unit Cost"
-              DTS:DTSID="{AA6EDC62-E25D-4F36-A910-139C19A0FF37}"
+              DTS:DTSID="{3FFC4D8F-8716-481D-B598-9DDFC35A66A0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -149,7 +146,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Total Revenue"
-              DTS:DTSID="{385A5079-9931-40AC-B5DC-7D8A13279EEA}"
+              DTS:DTSID="{0215C82F-52E2-498E-8256-586997FF077F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -158,7 +155,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Total Cost"
-              DTS:DTSID="{DE648A54-99EE-4BB1-8507-ED67D67F266C}"
+              DTS:DTSID="{E91997E9-B5E9-428B-919E-AE46835BA849}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +164,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Total Profit"
-              DTS:DTSID="{842B228F-6E15-4702-B1D6-097677CA3EED}"
+              DTS:DTSID="{E655EBF9-A5C4-4E88-AA9A-208A7C329D20}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -267,7 +264,7 @@
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Sales Channel]"
                       cachedCodepage="1252"
                       cachedDataType="str"
-                      cachedLength="10"
+                      cachedLength="50"
                       cachedName="Sales Channel"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Sales Channel]"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]" />
@@ -281,15 +278,13 @@
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order Priority]" />
                     <inputColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Order Date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="dbTimeStamp"
                       cachedName="Order Date"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order Date]"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order Date]" />
                     <inputColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Order ID]"
-                      cachedDataType="ui8"
+                      cachedDataType="i8"
                       cachedName="Order ID"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Order ID]"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order ID]" />
@@ -343,9 +338,7 @@
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Total Profit]" />
                     <inputColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Ship Date]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
+                      cachedDataType="dbTimeStamp"
                       cachedName="Ship Date"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[ShipDate]"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Ship Date]" />
@@ -550,7 +543,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Sales Channel]"
-                      length="10"
+                      length="50"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Sales Channel]"
                       name="Sales Channel"
                       truncationRowDisposition="FailComponent">
@@ -589,12 +582,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order Date]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Order Date]"
-                      length="50"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order Date]"
                       name="Order Date"
                       truncationRowDisposition="FailComponent">
@@ -611,7 +602,7 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Order ID]"
-                      dataType="ui8"
+                      dataType="i8"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Order ID]"
@@ -631,12 +622,10 @@
                     </outputColumn>
                     <outputColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Ship Date]"
-                      codePage="1252"
-                      dataType="str"
+                      dataType="dbTimeStamp"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Ship Date]"
-                      length="50"
                       lineageId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].Columns[Ship Date]"
                       name="Ship Date"
                       truncationRowDisposition="FailComponent">
@@ -818,21 +807,15 @@
                       name="Order Priority" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Order Date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="dbTimeStamp"
                       name="Order Date" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Order ID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="ui8"
                       name="Order ID" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Ship Date]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
+                      dataType="dbTimeStamp"
                       name="Ship Date" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task -- Extract, Modify, Load data\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Units Sold]"
